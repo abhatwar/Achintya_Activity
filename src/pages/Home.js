@@ -1,7 +1,10 @@
 function Home() {
     return (
-        <div className="App">
-            <h1>Home Page</h1>
+        <div className="home">
+            <div class="container pt-3 mb-3">
+                <h1>Home Page</h1>
+            </div>
+
         </div>
 
     );

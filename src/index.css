@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --main-blue: #0d6efd;  /* Bootstrap primary blue */
+  --dark-blue: #084298;
+  --light-blue: #cfe2ff;
+}
+
+/* Make all headings blue */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-blue) !important;
+}
+
+/* Make navbar background blue */
+.navbar {
+  background-color: var(--main-blue) !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: rgb(17, 13, 13) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--main-blue) !important;
+  border-color: var(--main-blue) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-blue) !important;
+}
+
+/* Links default blue */
+a {
+  color: var(--main-blue);
+}
+
+a:hover {
+  color: var(--dark-blue);
+}
+

@@ -1,8 +1,8 @@
-function User() {
+function blog() {
   return (
-    <div className="user">
+    <div className="blog">
       <div className="container pt-3 mb-3">
-        <h1>User Page</h1>
+        <h1>blog Page</h1>
       </div>
       
     </div>
@@ -10,4 +10,4 @@ function User() {
   );
 }
 
-export default User;
+export default blog;

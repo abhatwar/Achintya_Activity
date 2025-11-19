@@ -1,19 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import User from './pages/User';
 import Footer from './components/footer';
 import Header from './components/header';
+import Home from './pages/Home';
+import Lifeatachintiya from './pages/lifeatachintiya';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
+    <Router>
+
+<Header />
+     <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Lifeatachintiya" element={<Lifeatachintiya />} />
+      </Routes>
     <Footer />
+    </Router>
+    
   </React.StrictMode>
   
 );
