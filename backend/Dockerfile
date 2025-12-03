@@ -18,7 +18,7 @@ RUN npm install
 COPY . .
 
 # Generate Prisma Client with required binary targets
-RUN npx prisma generate --schema=./prisma/schema.prisma --binary-targets native,debian-openssl-1.1.x,debian-openssl-3.0.x
+RUN npx prisma generate --schema=./prisma/schema.prisma
 
 # --- Step 2: Production Image ---
 FROM node:18-slim
